@@ -1,0 +1,1714 @@
+[2024-01-16 14:32:22,125][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+[2024-01-16 14:33:04,027][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+[2024-01-16 14:33:32,095][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+[2024-01-16 14:37:16,903][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 54, in get_issue_detail
+    issue = JiraIssue.objects.get(id=issue_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraIssue.DoesNotExist: JiraIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 54, in get_issue_detail
+    issue = JiraIssue.objects.get(id=issue_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraIssue.DoesNotExist: JiraIssue matching query does not exist.
+[2024-01-16 14:37:20,470][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'gerg'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 63, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django_restql/mixins.py", line 149, in to_representation
+    return super().to_representation(instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/utils/serializers.py", line 35, in get_modifier_name
+    Users.objects.filter(id=instance.modifier)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'gerg'.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'gerg'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 63, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django_restql/mixins.py", line 149, in to_representation
+    return super().to_representation(instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/utils/serializers.py", line 35, in get_modifier_name
+    Users.objects.filter(id=instance.modifier)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'gerg'.
+[2024-01-16 14:41:43,849][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+[2024-01-16 14:43:00,036][django.request.log_response():224] [ERROR] Internal Server Error: /api/system/jira/add_issue
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = await get_response(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 129, in __acall__
+    response = await sync_to_async(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8001/api/system/jira/add_issue/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2024-01-16 14:43:00,039][django.channels.server.log_action():160] [ERROR] [35;1mHTTP POST /api/system/jira/add_issue 500 [0.09, 127.0.0.1:64767][0m
+[2024-01-16 14:43:09,359][django.request.log_response():224] [ERROR] Internal Server Error: /api/system/jira/add_issue
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = await get_response(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 129, in __acall__
+    response = await sync_to_async(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8001/api/system/jira/add_issue/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2024-01-16 14:43:09,362][django.channels.server.log_action():160] [ERROR] [35;1mHTTP POST /api/system/jira/add_issue 500 [0.05, 127.0.0.1:64767][0m
+[2024-01-16 14:43:30,068][django.request.log_response():224] [ERROR] Internal Server Error: /api/system/jira/add_issue
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = await get_response(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 129, in __acall__
+    response = await sync_to_async(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8001/api/system/jira/add_issue/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2024-01-16 14:43:30,070][django.channels.server.log_action():160] [ERROR] [35;1mHTTP POST /api/system/jira/add_issue 500 [0.05, 127.0.0.1:64767][0m
+[2024-01-16 14:43:49,348][django.request.log_response():224] [ERROR] Internal Server Error: /api/system/jira/add_issue
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = await get_response(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 129, in __acall__
+    response = await sync_to_async(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8001/api/system/jira/add_issue/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2024-01-16 14:43:49,351][django.channels.server.log_action():160] [ERROR] [35;1mHTTP POST /api/system/jira/add_issue 500 [0.05, 127.0.0.1:64767][0m
+[2024-01-16 14:44:17,157][django.request.log_response():224] [ERROR] Internal Server Error: /api/system/jira/add_issue
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = await get_response(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 129, in __acall__
+    response = await sync_to_async(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8001/api/system/jira/add_issue/?project_id=1 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2024-01-16 14:44:17,159][django.channels.server.log_action():160] [ERROR] [35;1mHTTP POST /api/system/jira/add_issue?project_id=1 500 [0.06, 127.0.0.1:64767][0m
+[2024-01-16 14:45:45,123][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 54, in get_issue_detail
+    issue = JiraIssue.objects.get(id=issue_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraIssue.DoesNotExist: JiraIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 54, in get_issue_detail
+    issue = JiraIssue.objects.get(id=issue_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraIssue.DoesNotExist: JiraIssue matching query does not exist.
+[2024-01-16 14:46:25,859][django.request.log_response():224] [ERROR] Internal Server Error: /api/system/jira/add_issue
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = await get_response(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 129, in __acall__
+    response = await sync_to_async(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8001/api/system/jira/add_issue/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2024-01-16 14:46:25,862][django.channels.server.log_action():160] [ERROR] [35;1mHTTP POST /api/system/jira/add_issue 500 [0.05, 127.0.0.1:64783][0m
+[2024-01-16 14:47:11,206][django.request.log_response():224] [ERROR] Internal Server Error: /api/system/jira/add_issue
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = await get_response(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 129, in __acall__
+    response = await sync_to_async(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8001/api/system/jira/add_issue/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2024-01-16 14:47:11,209][django.channels.server.log_action():160] [ERROR] [35;1mHTTP POST /api/system/jira/add_issue 500 [0.04, 127.0.0.1:64783][0m
+[2024-01-16 14:47:16,059][django.request.log_response():224] [ERROR] Internal Server Error: /api/system/jira/add_issue
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = await get_response(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 129, in __acall__
+    response = await sync_to_async(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8001/api/system/jira/add_issue/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2024-01-16 14:47:16,063][django.channels.server.log_action():160] [ERROR] [35;1mHTTP POST /api/system/jira/add_issue 500 [0.05, 127.0.0.1:64783][0m
+[2024-01-16 14:47:43,174][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 79, in add_issue
+    project = JiraProject.objects.get(id=project_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+dvadmin.system.models.JiraProject.DoesNotExist: JiraProject matching query does not exist.
+[2024-01-16 19:38:31,888][daphne.server.application_checker():290] [ERROR] Exception inside application: (2003, "Can't connect to MySQL server on '192.168.1.13' ([Errno 51] Network is unreachable)")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.13' ([Errno 51] Network is unreachable)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/generic/websocket.py", line 194, in websocket_receive
+    await self.receive(text_data=message["text"])
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/application/websocketConfig.py", line 103, in receive
+    user_list = await _get_message_center_instance(message_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/application/websocketConfig.py", line 37, in _get_message_center_instance
+    if _MessageCenter:
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 284, in __bool__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 171, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1130, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.13' ([Errno 51] Network is unreachable)")
+[2024-01-16 19:54:37,769][daphne.server.application_checker():290] [ERROR] Exception inside application: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/generic/websocket.py", line 173, in websocket_connect
+    await self.connect()
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/application/websocketConfig.py", line 73, in connect
+    unread_count = await _get_message_unread(self.user_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/application/websocketConfig.py", line 47, in _get_message_unread
+    count = MessageCenterTargetUser.objects.filter(users=user_id, is_read=False).count()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 412, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 519, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 504, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+[2024-01-16 19:55:43,763][daphne.server.application_checker():290] [ERROR] Exception inside application: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/generic/websocket.py", line 173, in websocket_connect
+    await self.connect()
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/application/websocketConfig.py", line 73, in connect
+    unread_count = await _get_message_unread(self.user_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/application/websocketConfig.py", line 47, in _get_message_unread
+    count = MessageCenterTargetUser.objects.filter(users=user_id, is_read=False).count()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 412, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 519, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 504, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+[2024-01-16 19:56:24,693][daphne.server.application_checker():290] [ERROR] Exception inside application: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 644, in connect
+    sock = socket.create_connection(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/generic/websocket.py", line 173, in websocket_connect
+    await self.connect()
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/application/websocketConfig.py", line 73, in connect
+    unread_count = await _get_message_unread(self.user_id)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/channels/db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/application/websocketConfig.py", line 47, in _get_message_unread
+    count = MessageCenterTargetUser.objects.filter(users=user_id, is_read=False).count()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 412, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 519, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 504, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/utils/asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 358, in __init__
+    self.connect()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 711, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '192.168.1.13' (timed out)")
+[2024-01-17 08:42:15,745][root.post():313] [ERROR] 消息发送失败, Request Exception!
+[2024-01-17 10:30:53,267][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 137, in add_issue
+    JiraIssue.objects.create(**data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: JiraIssue() got an unexpected keyword argument 'assigned_name'
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 137, in add_issue
+    JiraIssue.objects.create(**data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: JiraIssue() got an unexpected keyword argument 'assigned_name'
+[2024-01-17 10:31:03,549][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 137, in add_issue
+    JiraIssue.objects.create(**data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: JiraIssue() got an unexpected keyword argument 'assigned_name'
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 137, in add_issue
+    JiraIssue.objects.create(**data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/base.py", line 503, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: JiraIssue() got an unexpected keyword argument 'assigned_name'
+[2024-01-17 10:53:26,996][root.post():313] [ERROR] 消息发送失败, Request Exception!
+[2024-01-17 18:48:49,837][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 135, in add_issue
+    project_name = Project_Serializer.data.get('name')
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django_restql/mixins.py", line 149, in to_representation
+    return super().to_representation(instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `JiraProjectSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'name'.
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'int' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 135, in add_issue
+    project_name = Project_Serializer.data.get('name')
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django_restql/mixins.py", line 149, in to_representation
+    return super().to_representation(instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `JiraProjectSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `int` instance.
+Original exception text was: 'int' object has no attribute 'name'.
+[2024-01-17 18:50:59,842][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 134, in add_issue
+    project_id2 = JiraProject.objects.get(id=data['id'])
+KeyError: 'id'
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 134, in add_issue
+    project_id2 = JiraProject.objects.get(id=data['id'])
+KeyError: 'id'
+[2024-01-17 18:51:30,277][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 142, in add_issue
+    '有新的issue来自' + data['project_name'] + '，标题为' + data['signal_number'] + ':' + data['name'] + '指派给' + assigned_name,
+KeyError: 'project_name'
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 142, in add_issue
+    '有新的issue来自' + data['project_name'] + '，标题为' + data['signal_number'] + ':' + data['name'] + '指派给' + assigned_name,
+KeyError: 'project_name'
+[2024-01-17 18:52:08,690][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 142, in add_issue
+    '有新的issue来自' + [project_name] + '，标题为' + data['signal_number'] + ':' + data['name'] + '指派给' + assigned_name,
+TypeError: can only concatenate str (not "list") to str
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 142, in add_issue
+    '有新的issue来自' + [project_name] + '，标题为' + data['signal_number'] + ':' + data['name'] + '指派给' + assigned_name,
+TypeError: can only concatenate str (not "list") to str
+[2024-01-18 08:49:38,172][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+[2024-01-18 08:50:31,831][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+[2024-01-18 08:50:45,603][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+[2024-01-18 08:51:56,660][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+[2024-01-18 08:52:17,506][dvadmin.utils.exception.CustomExceptionHandler():68] [ERROR] Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/babyyy/Downloads/project2/wy-backend-main-2/dvadmin/system/views/jira.py", line 107, in get_issue_list
+    serialized_data = serializer.data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/babyyy/Downloads/project2/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'dvadmin_jira_issue.pending_datetime' in 'field list'")

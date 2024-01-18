@@ -1,0 +1,608 @@
+[
+    {
+        "name": "系统管理",
+        "icon": "iconfont icon-xitongshezhi",
+        "sort": 1,
+        "is_link": false,
+        "is_catalog": true,
+        "web_path": "/system",
+        "component": "",
+        "component_name": "",
+        "status": true,
+        "cache": false,
+        "visible": true,
+        "parent": null,
+        "children": [
+            {
+                "name": "菜单管理",
+                "icon": "iconfont icon-caidan",
+                "sort": 1,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "/menu",
+                "component": "system/menu/index",
+                "component_name": "menu",
+                "status": true,
+                "cache": false,
+                "visible": false       ,
+                "parent": 1,
+                "children": [],
+                "menu_button": [
+                    {
+                        "name": "查询",
+                        "value": "menu:Search",
+                        "api": "/api/system/menu/",
+                        "method": 0
+                    },
+                    {
+                        "name": "详情",
+                        "value": "menu:Retrieve",
+                        "api": "/api/system/menu/{id}/",
+                        "method": 0
+                    },
+                    {
+                        "name": "查询所有",
+                        "value": "menu:SearchAll",
+                        "api": "/api/system/menu/get_all_menu/",
+                        "method": 0
+                    },
+                    {
+                        "name": "路由",
+                        "value": "menu:router",
+                        "api": "/api/system/menu/web_router/",
+                        "method": 0
+                    },
+                    {
+                        "name": "查询按钮权限",
+                        "value": "btn:Search",
+                        "api": "/api/system/menu_button/",
+                        "method": 0
+                    },
+                    {
+                        "name": "查询列权限",
+                        "value": "column:Search",
+                        "api": "/api/system/column/",
+                        "method": 0
+                    },
+                    {
+                        "name": "新增",
+                        "value": "menu:Create",
+                        "api": "/api/system/menu/",
+                        "method": 1
+                    },
+                    {
+                        "name": "上移",
+                        "value": "menu:MoveUp",
+                        "api": "/api/system/menu/mode_up/",
+                        "method": 1
+                    },
+                    {
+                        "name": "下移",
+                        "value": "menu:MoveDown",
+                        "api": "/api/system/menu/mode_down/",
+                        "method": 1
+                    },
+                    {
+                        "name": "新增按钮权限",
+                        "value": "btn:Create",
+                        "api": "/api/system/menu_button/",
+                        "method": 1
+                    },
+                    {
+                        "name": "新增列权限",
+                        "value": "column:Create",
+                        "api": "/api/system/column/",
+                        "method": 1
+                    },
+                    {
+                        "name": "自动匹配列权限",
+                        "value": "column:Match",
+                        "api": "/api/system/column/auto_match_fields/",
+                        "method": 1
+                    },
+                    {
+                        "name": "编辑",
+                        "value": "menu:Update",
+                        "api": "/api/system/menu/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "修改按钮权限",
+                        "value": "btn:Update",
+                        "api": "/api/system/menu_button/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "编辑列权限",
+                        "value": "column:Update",
+                        "api": "/api/system/column/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "删除",
+                        "value": "menu:Delete",
+                        "api": "/api/system/menu/{id}/",
+                        "method": 3
+                    },
+                    {
+                        "name": "删除按钮权限",
+                        "value": "btn:Delete",
+                        "api": "/api/system/menu_button/{id}/",
+                        "method": 3
+                    },
+                    {
+                        "name": "删除列权限",
+                        "value": "column:Delete",
+                        "api": "/api/system/column/{id}/",
+                        "method": 3
+                    }
+                ],
+                "menu_field": []
+            },
+            {
+                "name": "部门管理",
+                "icon": "ele-OfficeBuilding",
+                "sort": 3,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "/dept",
+                "component": "system/dept/index",
+                "component_name": "dept",
+                "status": true,
+                "cache": false,
+                "visible": true,
+                "parent": 1,
+                "children": [],
+                "menu_button": [
+                    {
+                        "name": "查询",
+                        "value": "dept:Search",
+                        "api": "/api/system/dept/",
+                        "method": 0
+                    },
+                    {
+                        "name": "详情",
+                        "value": "dept:Retrieve",
+                        "api": "/api/system/dept/{id}/",
+                        "method": 0
+                    },
+                    {
+                        "name": "查询所有",
+                        "value": "dept:SearchAll",
+                        "api": "/api/system/dept/all_dept/",
+                        "method": 0
+                    },
+                    {
+                        "name": "懒加载查询所有",
+                        "value": "dept:LazySearchAll",
+                        "api": "/api/system/dept/dept_lazy_tree/",
+                        "method": 0
+                    },
+                    {
+                        "name": "头信息",
+                        "value": "dept:HeaderInfo",
+                        "api": "/api/system/dept/dept_info/",
+                        "method": 0
+                    },
+                    {
+                        "name": "新增",
+                        "value": "dept:Create",
+                        "api": "/api/system/dept/",
+                        "method": 1
+                    },
+                    {
+                        "name": "上移",
+                        "value": "dept:MoveUp",
+                        "api": "/api/system/dept/mode_up/",
+                        "method": 1
+                    },
+                    {
+                        "name": "下移",
+                        "value": "dept:MoveDown",
+                        "api": "/api/system/dept/mode_down/",
+                        "method": 1
+                    },
+                    {
+                        "name": "编辑",
+                        "value": "dept:Update",
+                        "api": "/api/system/dept/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "删除",
+                        "value": "dept:Delete",
+                        "api": "/api/system/dept/{id}/",
+                        "method": 3
+                    }
+                ],
+                "menu_field": []
+            },
+            {
+                "name": "角色管理",
+                "icon": "ele-ColdDrink",
+                "sort": 4,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "/role",
+                "component": "system/role/index",
+                "component_name": "role",
+                "status": true,
+                "cache": false,
+                "visible": true,
+                "parent": 1,
+                "children": [],
+                "menu_button": [
+                    {
+                        "name": "查询",
+                        "value": "role:Search",
+                        "api": "/api/system/role/",
+                        "method": 0
+                    },
+                    {
+                        "name": "详情",
+                        "value": "role:Retrieve",
+                        "api": "/api/system/role/{id}/",
+                        "method": 0
+                    },
+                    {
+                        "name": "权限配置",
+                        "value": "role:Permission",
+                        "api": "/api/system/role/{id}/",
+                        "method": 0
+                    },
+                    {
+                        "name": "新增",
+                        "value": "role:Create",
+                        "api": "/api/system/role/",
+                        "method": 1
+                    },
+                    {
+                        "name": "编辑",
+                        "value": "role:Update",
+                        "api": "/api/system/role/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "保存",
+                        "value": "role:Save",
+                        "api": "/api/system/role/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "删除",
+                        "value": "role:Delete",
+                        "api": "/api/system/role/{id}/",
+                        "method": 3
+                    }
+                ],
+                "menu_field": [
+                    {
+                        "field_name": "create_datetime",
+                        "title": "创建时间",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "creator",
+                        "title": "创建人",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "dept_belong_id",
+                        "title": "数据归属部门",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "description",
+                        "title": "描述",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "id",
+                        "title": "Id",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "key",
+                        "title": "权限字符",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "modifier",
+                        "title": "修改人",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "name",
+                        "title": "角色名称",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "sort",
+                        "title": "角色顺序",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "status",
+                        "title": "角色状态",
+                        "model": "Role"
+                    },
+                    {
+                        "field_name": "update_datetime",
+                        "title": "修改时间",
+                        "model": "Role"
+                    }
+                ]
+            },
+            {
+                "name": "用户管理",
+                "icon": "iconfont icon-icon-",
+                "sort": 6,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "/user",
+                "component": "system/user/index",
+                "component_name": "user",
+                "status": true,
+                "cache": false,
+                "visible": true,
+                "parent": 1,
+                "children": [],
+                "menu_button": [
+                    {
+                        "name": "查询",
+                        "value": "user:Search",
+                        "api": "/api/system/user/",
+                        "method": 0
+                    },
+                    {
+                        "name": "详情",
+                        "value": "user:Retrieve",
+                        "api": "/api/system/user/{id}/",
+                        "method": 0
+                    },
+                    {
+                        "name": "新增",
+                        "value": "user:Create",
+                        "api": "/api/system/user/",
+                        "method": 1
+                    },
+                    {
+                        "name": "导出",
+                        "value": "user:Export",
+                        "api": "/api/system/user/export/",
+                        "method": 1
+                    },
+                    {
+                        "name": "导入",
+                        "value": "user:Import",
+                        "api": "/api/system/user/import/",
+                        "method": 1
+                    },
+                    {
+                        "name": "编辑",
+                        "value": "user:Update",
+                        "api": "/api/system/user/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "重设密码",
+                        "value": "user:ResetPassword",
+                        "api": "/api/system/user/{id}/reset_password/",
+                        "method": 2
+                    },
+                    {
+                        "name": "重置密码",
+                        "value": "user:DefaultPassword",
+                        "api": "/api/system/user/{id}/reset_to_default_password/",
+                        "method": 2
+                    },
+                    {
+                        "name": "删除",
+                        "value": "user:Delete",
+                        "api": "/api/system/user/{id}/",
+                        "method": 3
+                    }
+                ],
+                "menu_field": [
+                    {
+                        "field_name": "avatar",
+                        "title": "头像",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "create_datetime",
+                        "title": "创建时间",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "creator",
+                        "title": "创建人",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "dept",
+                        "title": "所属部门",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "dept_belong_id",
+                        "title": "数据归属部门",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "description",
+                        "title": "描述",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "email",
+                        "title": "邮箱",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "gender",
+                        "title": "性别",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "id",
+                        "title": "Id",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "mobile",
+                        "title": "电话",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "modifier",
+                        "title": "修改人",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "name",
+                        "title": "姓名",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "update_datetime",
+                        "title": "修改时间",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "username",
+                        "title": "用户账号",
+                        "model": "Users"
+                    },
+                    {
+                        "field_name": "user_type",
+                        "title": "用户类型",
+                        "model": "Users"
+                    }
+                ]
+            }
+        ],
+        "menu_button": [],
+        "menu_field": []
+    },
+    {
+        "name": "常规配置",
+        "icon": "iconfont icon-configure",
+        "sort": 2,
+        "is_link": false,
+        "is_catalog": true,
+        "web_path": "/generalConfig",
+        "component": "",
+        "component_name": "",
+        "status": true,
+        "cache": false,
+        "visible": true,
+        "parent": null,
+        "children": [
+            {
+                "name": "系统配置",
+                "icon": "iconfont icon-system",
+                "sort": 0,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "/config",
+                "component": "system/config/index",
+                "component_name": "config",
+                "status": true,
+                "cache": false,
+                "visible": true,
+                "parent": 10,
+                "children": [],
+                "menu_button": [
+                    {
+                        "name": "查询",
+                        "value": "system_config:Search",
+                        "api": "/api/system/system_config/",
+                        "method": 0
+                    },
+                    {
+                        "name": "详情",
+                        "value": "system_config:Retrieve",
+                        "api": "/api/system/system_config/{id}/",
+                        "method": 0
+                    },
+                    {
+                        "name": "新增",
+                        "value": "system_config:Create",
+                        "api": "/api/system/system_config/",
+                        "method": 1
+                    },
+                    {
+                        "name": "编辑",
+                        "value": "system_config:Update",
+                        "api": "/api/system/system_config/{id}/",
+                        "method": 2
+                    },
+                    {
+                        "name": "删除",
+                        "value": "system_config:Delete",
+                        "api": "/api/system/system_config/{id}/",
+                        "method": 3
+                    }
+                ],
+                "menu_field": []
+            }
+        ],
+        "menu_button": [],
+        "menu_field": []
+    },
+    {
+        "name": "Jira管理",
+        "icon": "iconfont icon-configure",
+        "sort": 2,
+        "is_link": false,
+        "is_catalog": true,
+        "web_path": "/jira",
+        "component": "",
+        "component_name": "",
+        "status": true,
+        "cache": false,
+        "visible": true,
+        "parent": null,
+        "children": [
+             {
+                "name": "项目管理",
+                "icon": "iconfont icon-system",
+                "sort": 0,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "/project",
+                "component": "jira/project/index",
+                "component_name": "project",
+                "status": true,
+                "cache": false,
+                "visible": true,
+                "parent": 10,
+                "children": [],
+                "menu_button": [
+
+                ],
+                "menu_field": [
+
+                ]
+            },{
+                "name": "issue管理",
+                "icon": "iconfont icon-system",
+                "sort": 0,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "project/:id/issue",
+                "component": "jira/issue/index",
+                "component_name": "issue",
+                "status": true,
+                "cache": false,
+                "visible": false,
+                "parent": 10,
+                "children": [],
+                "menu_button": [
+                ],
+                "menu_field": []
+            }
+        ]
+    }
+]

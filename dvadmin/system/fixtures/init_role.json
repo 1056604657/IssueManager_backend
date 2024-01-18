@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Jira角色",
+        "key": "admin",
+        "sort": 1,
+        "status": true,
+        "remark": null
+    }
+]
