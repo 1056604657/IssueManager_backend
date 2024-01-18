@@ -8,7 +8,9 @@ from dvadmin.utils.json_response import DetailResponse, SuccessResponse, ErrorRe
 from rest_framework.decorators import action
 from dingtalkchatbot.chatbot import DingtalkChatbot
 from enum import Enum
-from datetime import datetime
+from datetime import datetime, timedelta
+from django.db.models import Count, DateField, Case, When, F
+from django.db.models.functions import Coalesce
 
 
 class JiraProjectSerializer(CustomModelSerializer):
@@ -203,6 +205,55 @@ class JiraViewSet(CustomModelViewSet):
         }
         JiraIssue.objects.filter(id=data.get('id')).update(**params)
         return DetailResponse(msg='保存成功')
+
+    @action(methods=['GET'], detail=False)
+    def issue_analysis(self, request):
+        issue_count = JiraIssue.objects.count()
+        unpending_count = JiraIssue.objects.filter(status=1, pending_datetime__isnull=True).count()
+        pending_count = JiraIssue.objects.filter(status=1, pending_datetime__isnull=False).count()
+        resolve_count = JiraIssue.objects.filter(status=2).count()
+        seven_days_ago = datetime.now() - timedelta(days=7)
+        daily_counts = JiraIssue.objects.filter(
+            create_datetime__gte=seven_days_ago
+        ).values('create_datetime__date').annotate(
+            created_count=Coalesce(Count('id'), 0),
+            resolved_count=Coalesce(Count(Case(When(resolve_datetime__date=F('create_datetime__date'), then=1))), 0)
+        ).order_by('create_datetime__date')
+        daily_data = []
+        current_date = seven_days_ago.date()
+        for entry in daily_counts:
+            while entry['create_datetime__date'] > current_date:
+                daily_data.append({'date': current_date, 'created_count': 0, 'resolved_count': 0})
+                current_date += timedelta(days=1)
+            daily_data.append({
+                'date': entry['create_datetime__date'],
+                'created_count': entry['created_count'],
+                'resolved_count': entry['resolved_count'],
+            })
+            current_date += timedelta(days=1)
+
+        while current_date <= datetime.now().date():
+            daily_data.append({'date': current_date, 'created_count': 0, 'resolved_count': 0})
+            current_date += timedelta(days=1)
+
+        projects = (JiraIssue.objects.filter(resolve_datetime__isnull=True).values('project__name')
+                    .annotate(unresolve_count=Count('id')).order_by('project__name'))
+        print(projects)
+        project_data = []
+        for entry in projects:
+            project_data.append({
+                'project_name': entry['project__name'],
+                'unresolve_count': entry['unresolve_count']
+            })
+        data = {
+            'issue_count': issue_count,
+            'unpending_count': unpending_count,
+            'pending_count': pending_count,
+            'resolve_count': resolve_count,
+            'daily_count': daily_data,
+            'unresolved_project_count': project_data
+        }
+        return DetailResponse(data=data)
 
 
 def send_dingtalk_message(webhook, msg, mobiles):
