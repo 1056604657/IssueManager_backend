@@ -38,6 +38,7 @@ class JiraViewSet(CustomModelViewSet):
     serializer_class = JiraProjectSerializer
 
     @action(methods=['GET'], detail=False)
+    # 获取项目列表
     def get_project_list_page(self, request):
         queryset = JiraProject.objects.all()
         serializer = JiraProjectSerializer(queryset, many=True)
@@ -45,6 +46,7 @@ class JiraViewSet(CustomModelViewSet):
         return SuccessResponse(data=data, total=len(data), msg="获取成功")
 
     @action(methods=['POST'], detail=False)
+    # 编辑项目信息
     def update_project(self, request):
         data = request.data
         data1 = {
@@ -58,12 +60,14 @@ class JiraViewSet(CustomModelViewSet):
         return DetailResponse(msg='更新成功')
 
     @action(methods=['POST'], detail=False)
+    # 删除项目
     def delete_project(self, request):
         data = request.data
         JiraProject.objects.filter(id=data.get('id')).delete()
         return DetailResponse(msg='更新成功')
 
     @action(methods=['GET'], detail=False)
+    # 获取所有项目列表
     def get_project_list(self, request):
         queryset = JiraProject.objects.all()
         serializer = JiraProjectSerializer(queryset, many=True)
@@ -86,6 +90,7 @@ class JiraViewSet(CustomModelViewSet):
         return DetailResponse(data=data)
 
     @action(methods=['POST'], detail=False)
+    # 获取单个issue在jiraissue表中的所有字段加上issuecomment表中相对应issue_id的comment
     def get_issue_detail(self, request):
         data = request.data
         issue_id = data.get('id')
@@ -98,6 +103,7 @@ class JiraViewSet(CustomModelViewSet):
         return DetailResponse(data=serialized_data)
 
     @action(methods=['GET'], detail=False)
+    # 获取请求中projectid和status的相应issue的所有字段
     def get_issue_list(self, request):
         queryset = JiraIssue.objects.filter(project_id=request.query_params.get('project_id'))
         status = request.query_params.get('status')
@@ -108,6 +114,7 @@ class JiraViewSet(CustomModelViewSet):
         return DetailResponse(data=serialized_data)
 
     @action(methods=['GET'], detail=False)
+    # 获取所有用户的id和name
     def get_jira_user(self, request):
         queryset = Users.objects.all()
         serializer = UserSerializer(queryset, many=True)
@@ -131,13 +138,15 @@ class JiraViewSet(CustomModelViewSet):
         user_serializer = UserSerializer(assigned_user)
         assigned_name = user_serializer.data.get('name')
         data['assigned_name'] = assigned_name
-
+        project_id2 = JiraProject.objects.get(id=data['project_id'])
+        Project_Serializer = JiraProjectSerializer(project_id2)
+        project_name = Project_Serializer.data.get('name')
         # 获取用户手机号码
         assigned_mobile = user_serializer.data.get('mobile')
 
         # 在发送钉钉消息时添加 mobiles 参数
         send_dingtalk_message(project.ding_webhook,
-                              '有新的issue：' + data['signal_number'] + ':' + data['name'] + '指派给 @' + assigned_name,
+                              '有新的issue：' + '来自于项目' + project_name + '， issue标题为:' + data['name'] + ' ，指派给' + assigned_name,
                               mobiles=[assigned_mobile])
         return DetailResponse(data='创建成功')
 
