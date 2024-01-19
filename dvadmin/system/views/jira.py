@@ -43,6 +43,8 @@ class JiraViewSet(CustomModelViewSet):
     # 获取项目列表
     def get_project_list_page(self, request):
         queryset = JiraProject.objects.all()
+        if request.query_params.get('name'):
+            queryset = queryset.filter(name__icontains=request.query_params.get('name'))
         serializer = JiraProjectSerializer(queryset, many=True)
         page = self.paginate_queryset(queryset)
         if page is not None:
