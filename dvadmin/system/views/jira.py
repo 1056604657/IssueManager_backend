@@ -44,8 +44,12 @@ class JiraViewSet(CustomModelViewSet):
     def get_project_list_page(self, request):
         queryset = JiraProject.objects.all()
         serializer = JiraProjectSerializer(queryset, many=True)
-        data = serializer.data
-        return SuccessResponse(data=data, total=len(data), msg="获取成功")
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True, request=request)
+            return self.get_paginated_response(serializer.data)
+        serializer = self.get_serializer(queryset, many=True, request=request)
+        return SuccessResponse(data=serializer.data, msg="获取成功")
 
     @action(methods=['POST'], detail=False)
     # 编辑项目信息
@@ -88,6 +92,18 @@ class JiraViewSet(CustomModelViewSet):
         issues = queryset.all()
         queryset = JiraProject.objects.all()
         serializer = JiraProjectSerializer(queryset, many=True)
+        data = serializer.data
+        return DetailResponse(data=data)
+
+    @action(methods=['GET'], detail=False)
+    # 获取个人issue列表
+    def get_my_issue(self, request):
+        user = request.user.id
+        status = request.query_params.get('status')
+        queryset = JiraIssue.objects.filter(assigned=user)
+        if status:
+            queryset = queryset.filter(status=status)
+        serializer = JiraIssueSerializer(queryset, many=True)
         data = serializer.data
         return DetailResponse(data=data)
 
