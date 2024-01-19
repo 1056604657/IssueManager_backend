@@ -71,6 +71,9 @@ class JiraViewSet(CustomModelViewSet):
     # 删除项目
     def delete_project(self, request):
         data = request.data
+        count = JiraIssue.objects.filter(project=data.get('id')).count()
+        if count:
+            return ErrorResponse(msg='项目下存在issue,不能删除')
         JiraProject.objects.filter(id=data.get('id')).delete()
         return DetailResponse(msg='更新成功')
 
