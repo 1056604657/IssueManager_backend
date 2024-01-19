@@ -124,6 +124,11 @@ class JiraViewSet(CustomModelViewSet):
             user = Users.objects.get(id=serializer.data.get('assigned'))
             if user:
                 serialized_data['assigned_name'] = user.name
+        serialized_data['project_name'] = '-'
+        if serializer.data.get('project'):
+            project = JiraProject.objects.get(id=serializer.data.get('project'))
+            if project:
+                serialized_data['project_name']=project.name
         serialized_data['comments'] = comment_serializer.data
         return DetailResponse(data=serialized_data)
 
