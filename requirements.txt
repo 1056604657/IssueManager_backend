@@ -29,3 +29,4 @@ gunicorn==21.2.0
 gevent==23.9.1
 Pillow==10.1.0
 DingtalkChatbot==1.5.7
+django-apscheduler==0.6.2

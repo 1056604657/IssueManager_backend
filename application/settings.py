@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     "captcha",
     "channels",
     "dvadmin.system",
+    'django_apscheduler'
 ]
 
 MIDDLEWARE = [

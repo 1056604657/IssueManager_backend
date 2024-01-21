@@ -11,6 +11,8 @@ from enum import Enum
 from datetime import datetime, timedelta
 from django.db.models import Count, DateField, Case, When, F
 from django.db.models.functions import Coalesce
+from apscheduler.schedulers.background import BackgroundScheduler
+from django_apscheduler.jobstores import DjangoJobStore, register_events, register_job
 
 
 class JiraProjectSerializer(CustomModelSerializer):
@@ -146,7 +148,7 @@ class JiraViewSet(CustomModelViewSet):
         if serializer.data.get('project'):
             project = JiraProject.objects.get(id=serializer.data.get('project'))
             if project:
-                serialized_data['project_name']=project.name
+                serialized_data['project_name'] = project.name
         serialized_data['comments'] = comment_serializer.data
         return DetailResponse(data=serialized_data)
 
@@ -219,7 +221,8 @@ class JiraViewSet(CustomModelViewSet):
         if not issue:
             return ErrorResponse(msg='issue不存在')
         update_data = {'resolve_datetime': data.get('resolve_datetime'), 'modifier': request.user.id, 'status': 2,
-                       'update_datetime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'), 'actual_hours': data.get('actual_hours')}
+                       'update_datetime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                       'actual_hours': data.get('actual_hours')}
         JiraIssue.objects.filter(id=issue_id).update(**update_data)
         if data.get('comment'):
             obj = {
@@ -235,7 +238,9 @@ class JiraViewSet(CustomModelViewSet):
         if project_serialize.data.get('ding_webhook'):
             user = Users.objects.get(id=request.user.id)
             user_serializer = UserSerializer(user)
-            send_dingtalk_message(project.ding_webhook, user_serializer.data.get('name')+'解决了issue:' + issue_serializer.data.get('signal_number')+' '+issue_serializer.data.get('name'), mobiles=None)
+            send_dingtalk_message(project.ding_webhook,
+                                  user_serializer.data.get('name') + '解决了issue:' + issue_serializer.data.get(
+                                      'signal_number') + ' ' + issue_serializer.data.get('name'), mobiles=None)
         return DetailResponse(data='保存成功')
 
     @action(methods=['POST'], detail=False)
@@ -310,9 +315,49 @@ def send_dingtalk_message(webhook, msg, mobiles):
             bot.send_text(msg=msg, at_mobiles=mobiles)
         else:
             bot.send_text(msg=msg)
-        print(webhook)
-        print(msg)
-        print(mobiles)
         print("Dingtalk message sent successfully!")
     except Exception as e:
         print(f"Error sending Dingtalk message: {str(e)}")
+
+
+scheduler = BackgroundScheduler()
+scheduler.add_jobstore(DjangoJobStore(), 'default')
+
+
+# 每天早上9点执行这个任务
+@register_job(scheduler, 'cron', id='jira_check_outdated', hour=9, replace_existing=True)
+def jira_check_outdated():
+    current_time = datetime.now()
+    projects = JiraProject.objects.filter(ding_webhook__isnull=False)
+    for project in projects:
+        issue_by_assigned = {}
+        issues = (JiraIssue.objects.filter(deadline__gt=current_time, status=1, project=project.id, assigned__isnull=False).
+                  values('id', 'name', 'assigned', 'assigned__name', 'assigned__mobile', 'assigned_id'))
+        user_map = {}
+        for issue in issues:
+            user_map[issue.get('assigned_id')] = {
+                'name': issue.get('assigned__name'),
+                'mobile': issue.get('assigned__mobile')
+            }
+        for issue in issues:
+            assigned_id = issue.get('assigned_id')
+            if assigned_id in issue_by_assigned:
+                issue_by_assigned[assigned_id] += 1
+            else:
+                issue_by_assigned[assigned_id] = 1
+        for assigned_id, issue_count in issue_by_assigned.items():
+            name = user_map[assigned_id].get('name')
+            text = f'{name},项目:{project.name}有{issue_count}个issue已过期,请即使处理'
+            if user_map[assigned_id].get('mobile'):
+                send_dingtalk_message(project.ding_webhook,
+                                      text,
+                                      mobiles=[user_map[assigned_id].get('mobile')])
+            else:
+                send_dingtalk_message(project.ding_webhook,
+                                      text,
+                                      mobiles=None)
+    pass
+
+
+register_events(scheduler)
+scheduler.start()
