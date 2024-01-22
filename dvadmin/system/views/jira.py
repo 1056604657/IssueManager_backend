@@ -194,9 +194,10 @@ class JiraViewSet(CustomModelViewSet):
 
         # 在发送钉钉消息时添加 mobiles 参数
         send_dingtalk_message(project.ding_webhook,
-                              '有新的issue：' + '来自于项目' + project_name + '， issue标题为:' + data['name'] + ' ，指派给' + assigned_name,
-                              mobiles=[assigned_mobile])
+                      '新的现场问题已创建：来自于项目' + project_name + '， issue标题为: ' + data["name"] + '，请登录BMEIM确认: http://im.bmetech.com',
+                      mobiles=[assigned_mobile])
         return DetailResponse(data='创建成功')
+
 
     @action(methods=['POST'], detail=False)
     def update_issue(self, request):
