@@ -602,12 +602,27 @@ class MessageCenterTargetUser(CoreModel):
 
 
 class JiraProject(CoreModel):
+    PROJECT_STAGE = (
+        (1, '运维阶段'),
+        (2, '项目验收'),
+        (3, '质保阶段'),
+        (4, '实施阶段'),
+        (5, '运维过期'),
+        (6, '质保过期'),
+    )
+    PROJECT_STATUS = (
+        (1, '正常服务'),
+        (2, '暂停服务'),
+    )
     name = models.CharField(max_length=64, verbose_name="项目名称", help_text="项目名称")
     key = models.CharField(max_length=64, verbose_name="键值", help_text="键值")
     ding_webhook = models.CharField(max_length=255, default="", verbose_name="钉钉webhook", help_text="钉钉webhook")
     remark = models.CharField(max_length=2000, blank=True, null=True, verbose_name="备注", help_text="备注")
-    manager = models.ForeignKey(Users, on_delete=models.CASCADE, related_name="jira_projects", verbose_name="负责人",
-                                help_text="负责人")
+    manager = models.ForeignKey(Users, on_delete=models.CASCADE, related_name="jira_projects", verbose_name="项目经理",
+                                help_text="项目经理")
+    stage = models.IntegerField(choices=PROJECT_STAGE, default=3, verbose_name="项目阶段", help_text="项目阶段")
+    status = models.IntegerField(choices=PROJECT_STATUS, default=1, verbose_name="项目状态", help_text="项目状态")
+
 
     class Meta:
         db_table = table_prefix + "jira_project"

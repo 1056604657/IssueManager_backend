@@ -40,6 +40,18 @@ class JiraViewSet(CustomModelViewSet):
     serializer_class = JiraProjectSerializer
 
     @action(methods=['GET'], detail=False)
+    def get_jira_project_stages(self, request):
+        stages = JiraProject._meta.get_field('stage').choices
+        stages = [{"id": id, "name": name} for id, name in stages]
+        return SuccessResponse(stages)
+
+    @action(methods=['GET'], detail=False)
+    def get_jira_project_status(self, request):
+        status = JiraProject._meta.get_field('status').choices
+        status = [{"id": id, "name": name} for id, name in status]
+        return SuccessResponse(status)
+
+    @action(methods=['GET'], detail=False)
     # 获取项目列表
     def get_project_list_page(self, request):
         queryset = JiraProject.objects.all()
@@ -51,6 +63,7 @@ class JiraViewSet(CustomModelViewSet):
             serializer = self.get_serializer(page, many=True, request=request)
             return self.get_paginated_response(serializer.data)
         serializer = self.get_serializer(queryset, many=True, request=request)
+        print(serializer.data)
         return SuccessResponse(data=serializer.data, msg="获取成功")
 
     @action(methods=['POST'], detail=False)
@@ -62,7 +75,9 @@ class JiraViewSet(CustomModelViewSet):
             'key': data.get('key'),
             'description': data.get('description'),
             'manager_id': data.get('manager'),
-            'ding_webhook': data.get('ding_webhook')
+            'ding_webhook': data.get('ding_webhook'),
+            'stage': data.get('stage'),
+            'status': data.get('status')
         }
         JiraProject.objects.filter(id=data.get('id')).update(**data1)
         return DetailResponse(msg='更新成功')
