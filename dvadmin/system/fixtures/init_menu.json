@@ -602,6 +602,40 @@
                 "menu_button": [
                 ],
                 "menu_field": []
+            },{
+                "name": "我的issue",
+                "icon": "iconfont icon-system",
+                "sort": 0,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "/issue",
+                "component": "jira/myissue/index",
+                "component_name": "myissue",
+                "status": true,
+                "cache": false,
+                "visible": true,
+                "parent": 10,
+                "children": [],
+                "menu_button": [
+                ],
+                "menu_field": []
+            },{
+                "name": "issue总览",
+                "icon": "iconfont icon-system",
+                "sort": 0,
+                "is_link": false,
+                "is_catalog": false,
+                "web_path": "/allissue",
+                "component": "jira/allissue/index",
+                "component_name": "allissue",
+                "status": true,
+                "cache": false,
+                "visible": true,
+                "parent": 10,
+                "children": [],
+                "menu_button": [
+                ],
+                "menu_field": []
             }
         ]
     }

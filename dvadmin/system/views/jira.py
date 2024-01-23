@@ -11,6 +11,9 @@ from enum import Enum
 from datetime import datetime, timedelta
 from django.db.models import Count, DateField, Case, When, F
 from django.db.models.functions import Coalesce
+from django.http import HttpResponse
+from openpyxl import Workbook
+
 from apscheduler.schedulers.background import BackgroundScheduler
 from django_apscheduler.jobstores import DjangoJobStore, register_events, register_job
 
@@ -29,9 +32,14 @@ class IssueCommentSerializer(CustomModelSerializer):
         fields = '__all__'
 
 
-class JiraIssueSerializer(CustomModelSerializer):
-    comments = IssueCommentSerializer(many=True, read_only=True)
+class AllIssueSerializer(CustomModelSerializer):
+    project = JiraProjectSerializer(many=False)
+    assigned = UserSerializer(many=False)
+    class Meta:
+        model = JiraIssue
+        fields = '__all__'
 
+class JiraIssueSerializer(CustomModelSerializer):
     class Meta:
         model = JiraIssue
         fields = '__all__'
@@ -65,7 +73,6 @@ class JiraViewSet(CustomModelViewSet):
             serializer = self.get_serializer(page, many=True, request=request)
             return self.get_paginated_response(serializer.data)
         serializer = self.get_serializer(queryset, many=True, request=request)
-        print(serializer.data)
         return SuccessResponse(data=serializer.data, msg="获取成功")
 
     @action(methods=['POST'], detail=False)
@@ -104,18 +111,53 @@ class JiraViewSet(CustomModelViewSet):
 
     @action(methods=['GET'], detail=False)
     def get_all_issue(self, request):
-        project_id = request.query_params.get('project_id')
-        if not project_id:
-            return ErrorResponse(msg='项目不存在')
-        status = request.query_params.get('status')
-        queryset = JiraProject.objects.filter(project_id=project_id)
-        if status is not None:
-            queryset = queryset.filter(status=status)
-        issues = queryset.all()
-        queryset = JiraProject.objects.all()
-        serializer = JiraProjectSerializer(queryset, many=True)
-        data = serializer.data
-        return DetailResponse(data=data)
+        queryset = JiraIssue.objects.all()
+        data = request.query_params
+        if data.get('project_id'):
+            queryset = queryset.filter(project_id=data.get('project_id'))
+        if data.get('name') is not None:
+            queryset = queryset.filter(name__icontains=data.get('name'))
+        if data.get('status'):
+            queryset = queryset.filter(status=data.get('status'))
+        if data.get('out_date') is not None:
+            queryset = queryset.filter(status=1, deadline__isnull=False, deadline__lte=datetime.now())
+        queryset = queryset.select_related('project').select_related('assigned')
+        serializer = AllIssueSerializer(queryset, many=True)
+        print(serializer.data)
+        if data.get('export'):
+            headers = ['所属项目', '标题', '标识号', '类型', '状态', '优先级', '延期', '解决结果', '来源', '指派给',
+                       '经办人', '报告人', '创建时间', '更新时间', '到期时间', '解决时间',
+                       '预期工时', '实际工时', '问题原因', '解决方法']
+            result = []
+            for item in serializer.data:
+                row = [
+                    item['project']['name'],
+                    item['name'],
+                    item['signal_number'],
+                    dict(JiraIssue._meta.get_field('type').choices).get(item['type']),
+                    '处理中' if item['status'] == 1 and item['pending_datetime'] else '待处理' if item['status'] == 1 else '已完成',
+                    dict(JiraIssue._meta.get_field('priority').choices).get(item['priority']),
+                    '是' if item['status'] == 1 and item['deadline'] and item['deadline'] < datetime.now() else '否',
+                    '已解决' if item['resolve_datetime'] else '未解决',
+                    dict(JiraIssue._meta.get_field('source').choices).get(item['source']),
+                    item['assigned']['name'],
+                    item['creator_name'],
+                    item['modifier_name'],
+                    item['create_datetime'],
+                    item['update_datetime'],
+                    item['deadline'],
+                    item['resolve_datetime'],
+                    item['expected_hours'],
+                    item['actual_hours'],
+                    item['question_reason'],
+                    item['resolve_method']
+                ]
+                result.append(row)
+            response = export_excel(result, headers, filename='example.xlsx')
+            return response
+        else:
+            data = serializer.data
+            return DetailResponse(data=data)
 
     @action(methods=['GET'], detail=False)
     # 获取个人issue列表
@@ -130,14 +172,11 @@ class JiraViewSet(CustomModelViewSet):
         return DetailResponse(data=data)
 
     @action(methods=['POST'], detail=False)
-    # 获取单个issue在jiraissue表中的所有字段加上issuecomment表中相对应issue_id的comment
     def get_issue_detail(self, request):
         data = request.data
         issue_id = data.get('id')
         issue = JiraIssue.objects.get(id=issue_id)
         serializer = JiraIssueSerializer(issue)
-        comment = IssueComment.objects.filter(issue_id=issue_id)
-        comment_serializer = IssueCommentSerializer(comment, many=True)
         serialized_data = serializer.data
         serialized_data['assigned_name'] = '-'
         if serializer.data.get('assigned'):
@@ -149,7 +188,6 @@ class JiraViewSet(CustomModelViewSet):
             project = JiraProject.objects.get(id=serializer.data.get('project'))
             if project:
                 serialized_data['project_name'] = project.name
-        serialized_data['comments'] = comment_serializer.data
         return DetailResponse(data=serialized_data)
 
     @action(methods=['GET'], detail=False)
@@ -196,10 +234,10 @@ class JiraViewSet(CustomModelViewSet):
 
         # 在发送钉钉消息时添加 mobiles 参数
         send_dingtalk_message(project.ding_webhook,
-                      '新的现场问题已创建：来自于项目' + project_name + '， issue标题为: ' + data["name"] + '，请登录BMEIM确认: http://im.bmetech.com',
-                      mobiles=[assigned_mobile])
+                              '新的现场问题已创建：来自于项目' + project_name + '， issue标题为: ' + data[
+                                  "name"] + '，请登录BMEIM确认: http://im.bmetech.com',
+                              mobiles=[assigned_mobile])
         return DetailResponse(data='创建成功')
-
 
     @action(methods=['POST'], detail=False)
     def update_issue(self, request):
@@ -220,18 +258,14 @@ class JiraViewSet(CustomModelViewSet):
         issue = JiraIssue.objects.filter(id=issue_id)
         if not issue:
             return ErrorResponse(msg='issue不存在')
-        update_data = {'resolve_datetime': data.get('resolve_datetime'), 'modifier': request.user.id, 'status': 2,
+        update_data = {
+                       'resolve_datetime': data.get('resolve_datetime'), 'modifier': request.user.id, 'status': 2,
                        'update_datetime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                       'actual_hours': data.get('actual_hours')}
+                       'actual_hours': data.get('actual_hours'),
+                       'question_reason': data.get('comment'),
+                       'resolve_method': data.get('solution')
+                       }
         JiraIssue.objects.filter(id=issue_id).update(**update_data)
-        if data.get('comment'):
-            obj = {
-                'body': data.get('comment'),
-                'solution': data.get('solution'),
-                'author_id': request.user.id,
-                'issue_id': issue_id
-            }
-            IssueComment.objects.create(**obj)
         issue = JiraIssue.objects.get(id=issue_id)
         issue_serializer = JiraIssueSerializer(issue)
         project = JiraProject.objects.get(id=issue_serializer.data.get('project'))
@@ -291,7 +325,6 @@ class JiraViewSet(CustomModelViewSet):
 
         projects = (JiraIssue.objects.filter(resolve_datetime__isnull=True).values('project__name')
                     .annotate(unresolve_count=Count('id')).order_by('project__name'))
-        print(projects)
         project_data = []
         for entry in projects:
             project_data.append({
@@ -332,8 +365,9 @@ def jira_check_outdated():
     projects = JiraProject.objects.filter(ding_webhook__isnull=False)
     for project in projects:
         issue_by_assigned = {}
-        issues = (JiraIssue.objects.filter(deadline__gt=current_time, status=1, project=project.id, assigned__isnull=False).
-                  values('id', 'name', 'assigned', 'assigned__name', 'assigned__mobile', 'assigned_id'))
+        issues = (
+            JiraIssue.objects.filter(deadline__gt=current_time, status=1, project=project.id, assigned__isnull=False).
+            values('id', 'name', 'assigned', 'assigned__name', 'assigned__mobile', 'assigned_id'))
         user_map = {}
         for issue in issues:
             user_map[issue.get('assigned_id')] = {
@@ -362,3 +396,24 @@ def jira_check_outdated():
 
 register_events(scheduler)
 scheduler.start()
+
+
+def export_excel(data, headers, filename='exported_data.xlsx'):
+    wb = Workbook()
+    ws = wb.active
+    for col_num, header in enumerate(headers, 1):
+        col_letter = chr(ord('A') + col_num - 1)
+        cell = ws[f'{col_letter}1']
+        cell.value = header
+
+    for row_num, row_data in enumerate(data, 2):
+        for col_num, value in enumerate(row_data, 1):
+            col_letter = chr(ord('A') + col_num - 1)
+            cell = ws[f'{col_letter}{row_num}']
+            cell.value = value
+
+    response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+    response['Content-Disposition'] = f'attachment; filename={filename}'
+
+    wb.save(response)
+    return response

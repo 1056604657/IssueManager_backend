@@ -672,6 +672,8 @@ class JiraIssue(CoreModel):
                                  help_text="指派人")
     project = models.ForeignKey(JiraProject, on_delete=models.CASCADE, related_name='jira_issue', verbose_name='所属项目',
                                 help_text="所属项目")
+    question_reason = models.CharField(max_length=255, default='', verbose_name="问题原因", help_text="问题原因")
+    resolve_method = models.CharField(max_length=255, default='',verbose_name="解决方法", help_text="解决方法")
 
     class Meta:
         db_table = table_prefix + "jira_issue"
