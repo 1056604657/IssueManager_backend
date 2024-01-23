@@ -682,6 +682,7 @@ class JiraIssue(CoreModel):
 
 class IssueComment(CoreModel):
     body = models.TextField(null=True, blank=True, verbose_name="描述", help_text="描述")
+    solution = models.TextField(null=True, blank=True, verbose_name="解决方法", help_text="解决方法")
     author = models.ForeignKey(Users, on_delete=models.CASCADE, related_name="issue_comment", verbose_name="创建人",
                              help_text="创建人")
     issue = models.ForeignKey(JiraIssue, on_delete=models.CASCADE, related_name='issue_comment', verbose_name='所属issue',

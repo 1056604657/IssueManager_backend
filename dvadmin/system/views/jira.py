@@ -227,6 +227,7 @@ class JiraViewSet(CustomModelViewSet):
         if data.get('comment'):
             obj = {
                 'body': data.get('comment'),
+                'solution': data.get('solution'),
                 'author_id': request.user.id,
                 'issue_id': issue_id
             }
