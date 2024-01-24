@@ -412,6 +412,21 @@ def export_excel(data, headers, filename='exported_data.xlsx'):
             cell = ws[f'{col_letter}{row_num}']
             cell.value = value
 
+    for col in ws.columns:
+        max_length = 0
+        column = col[0].column_letter
+        for cell in col:
+            try:
+                # 计算中文字符长度
+                if isinstance(cell.value, str):
+                    cell_length = sum(2 if ord(c) > 127 else 1 for c in cell.value)
+                    if cell_length > max_length:
+                        max_length = cell_length
+            except:
+                pass
+        adjusted_width = (max_length + 2)
+        ws.column_dimensions[column].width = adjusted_width
+
     response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
     response['Content-Disposition'] = f'attachment; filename={filename}'
 
