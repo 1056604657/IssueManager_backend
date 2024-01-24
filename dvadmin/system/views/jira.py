@@ -366,7 +366,7 @@ def jira_check_outdated():
     for project in projects:
         issue_by_assigned = {}
         issues = (
-            JiraIssue.objects.filter(deadline__gt=current_time, status=1, project=project.id, assigned__isnull=False).
+            JiraIssue.objects.filter(deadline__lt=current_time, status=1, project=project.id, assigned__isnull=False).
             values('id', 'name', 'assigned', 'assigned__name', 'assigned__mobile', 'assigned_id'))
         user_map = {}
         for issue in issues:
