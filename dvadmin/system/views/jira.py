@@ -44,6 +44,12 @@ class JiraIssueSerializer(CustomModelSerializer):
         model = JiraIssue
         fields = '__all__'
 
+class AllCommentSerializer(CustomModelSerializer):
+    issue = JiraIssueSerializer(many=False)
+    author = UserSerializer(many=False)
+    class Meta:
+        model = IssueComment
+        fields = '__all__'
 
 class JiraViewSet(CustomModelViewSet):
     queryset = JiraProject.objects.all()
@@ -127,7 +133,7 @@ class JiraViewSet(CustomModelViewSet):
         if data.get('export'):
             headers = ['所属项目', '标题', '标识号', '类型', '状态', '优先级', '延期', '解决结果', '来源', '指派给',
                        '经办人', '报告人', '创建时间', '更新时间', '到期时间', '解决时间',
-                       '预期工时', '实际工时', '问题原因', '解决方法']
+                       '预期工时', '实际工时', '问题原因', '解决方法', '工厂id']
             result = []
             for item in serializer.data:
                 row = [
@@ -150,7 +156,8 @@ class JiraViewSet(CustomModelViewSet):
                     item['expected_hours'],
                     item['actual_hours'],
                     item['question_reason'],
-                    item['resolve_method']
+                    item['resolve_method'],
+                    item['project']['key'],
                 ]
                 result.append(row)
             response = export_excel(result, headers, filename='example.xlsx')
@@ -340,7 +347,21 @@ class JiraViewSet(CustomModelViewSet):
             'unresolved_project_count': project_data
         }
         return DetailResponse(data=data)
-
+    
+    @action(methods=['GET'], detail=False)
+    def get_all_comment(self, request):
+        queryset = IssueComment.objects.all()
+        data = request.query_params
+        if data.get('issueid'):
+            queryset = queryset.filter(issue_id=data.get('issueid'))
+        if data.get('out_date') is not None:
+            out_date = datetime(2024, 10, 23, 10, 0, 0)
+            queryset = queryset.filter(update_datetime__gte=out_date)
+        queryset = queryset.select_related('author').select_related('issue')
+        serializer = AllCommentSerializer(queryset, many=True)
+        print(serializer.data)
+        data = serializer.data
+        return DetailResponse(data=data)
 
 def send_dingtalk_message(webhook, msg, mobiles):
     try:
@@ -432,3 +453,5 @@ def export_excel(data, headers, filename='exported_data.xlsx'):
 
     wb.save(response)
     return response
+
+   
