@@ -136,6 +136,14 @@ class JiraViewSet(CustomModelViewSet):
                        '预期工时', '实际工时', '问题原因', '解决方法', '工厂id']
             result = []
             for item in serializer.data:
+                delay = '否'
+                if item['deadline']:
+                    if item['resolve_datetime']:
+                        if datetime.strptime(item['deadline'], "%Y-%m-%d %H:%M:%S") < datetime.strptime(item['resolve_datetime'], "%Y-%m-%d %H:%M:%S"):
+                            delay = '是'
+                    else:
+                        if datetime.strptime(item['deadline'], "%Y-%m-%d %H:%M:%S") < datetime.now():
+                            delay = '是'
                 row = [
                     item['project']['name'],
                     item['name'],
@@ -143,7 +151,7 @@ class JiraViewSet(CustomModelViewSet):
                     dict(JiraIssue._meta.get_field('type').choices).get(item['type']),
                     '处理中' if item['status'] == 1 and item['pending_datetime'] else '待处理' if item['status'] == 1 else '已完成',
                     dict(JiraIssue._meta.get_field('priority').choices).get(item['priority']),
-                    '是' if item['status'] == 1 and item['deadline'] and datetime.strptime(item['deadline'], "%Y-%m-%d %H:%M:%S") < datetime.now() else '否',
+                    delay,
                     '已解决' if item['resolve_datetime'] else '未解决',
                     dict(JiraIssue._meta.get_field('source').choices).get(item['source']),
                     item['assigned']['name'],
