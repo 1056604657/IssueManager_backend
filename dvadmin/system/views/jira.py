@@ -132,7 +132,7 @@ class JiraViewSet(CustomModelViewSet):
         print(serializer.data)
         if data.get('export'):
             headers = ['所属项目', '标题', '标识号', '类型', '状态', '优先级', '延期', '解决结果', '来源', '指派给',
-                       '经办人', '报告人', '创建时间', '更新时间', '到期时间', '解决时间',
+                       '经办人', '报告人', '创建任务时间', '开始任务时间', '任务到期时间', '解决任务时间',
                        '预期工时', '实际工时', '问题原因', '解决方法', '工厂id']
             result = []
             for item in serializer.data:
