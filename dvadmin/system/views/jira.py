@@ -9,6 +9,7 @@ from rest_framework.decorators import action
 from dingtalkchatbot.chatbot import DingtalkChatbot
 from enum import Enum
 from datetime import datetime, timedelta
+from django.utils.dateparse import parse_datetime
 from django.db.models import Count, DateField, Case, When, F
 from django.db.models.functions import Coalesce
 from django.http import HttpResponse
@@ -114,7 +115,7 @@ class JiraViewSet(CustomModelViewSet):
         serializer = JiraProjectSerializer(queryset, many=True)
         data = serializer.data
         return DetailResponse(data=data)
-
+    
     @action(methods=['GET'], detail=False)
     def get_all_issue(self, request):
         queryset = JiraIssue.objects.all()
@@ -127,9 +128,30 @@ class JiraViewSet(CustomModelViewSet):
             queryset = queryset.filter(status=data.get('status'))
         if data.get('out_date') is not None:
             queryset = queryset.filter(status=1, deadline__isnull=False, deadline__lte=datetime.now())
+        
+        start_date = data.get('start_date')
+        end_date = data.get('stop_date')
+        if start_date and end_date:
+                start_datetime = datetime.strptime(start_date, '%Y-%m-%d')
+                end_datetime = datetime.strptime(end_date, '%Y-%m-%d')
+                print(start_datetime, end_datetime)
+                if start_datetime <= end_datetime:
+                    print('time ok============================')
+                    queryset = queryset.filter(create_datetime__range=(start_datetime, end_datetime))
+                    serializer2 = JiraIssueSerializer(queryset, many=True)
+                    print('111111111111111111111111')
+                    print(serializer2.data)
+                    print('111111111111111111111111')
+                    print(queryset.count())
+                else:
+                    print('time error')
         queryset = queryset.select_related('project').select_related('assigned')
+        print(request.query_params)
+        print('222222222222222222222222222')
+        print(queryset.count())
         serializer = AllIssueSerializer(queryset, many=True)
         print(serializer.data)
+        print('222222222222222222222222222')
         if data.get('export'):
             headers = ['所属项目', '标题', '标识号', '类型', '状态', '优先级', '延期', '解决结果', '来源', '指派给',
                        '经办人', '报告人', '创建任务时间', '开始任务时间', '任务到期时间', '解决任务时间',
